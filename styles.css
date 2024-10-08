@@ -24,7 +24,7 @@
   body {
     display: grid;
     line-height: 1.5;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 200px repeat(3, 1fr);    
     grid-template-rows: auto 75px 1fr 1fr;
     height:130vh;
     width: 100%;
@@ -49,7 +49,7 @@ input[type="search"] {
 
 .header{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 150px 1fr 1fr;
     grid-column: 2 / -1;
 
 }
@@ -62,11 +62,15 @@ input[type="search"] {
 .user{
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
 }
 
 .sidebar {
-    grid-row-start: 1;
     grid-row: 1 / -1;
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    justify-content: center;
+
 }
 
 .content {
@@ -79,13 +83,32 @@ input[type="search"] {
 .projects {
     grid-row: 3 / -1;
     grid-column: 1 / 2;
+    text-align: center;
+}
+.projectBoxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    border: var(--subborder);
+    height: 93%;
+    margin: 10px;
+    padding: 5px;
+}
+
+.projectBox {
+    border: var(--border);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .announcements,
-.trneding {
+.trending {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
     align-content: center;
+    text-align: center;
+
 }
