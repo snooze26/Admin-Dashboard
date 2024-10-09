@@ -9,19 +9,27 @@
 
 }
 
-.sidebar,
+/* .sidebar,
 .header,
 .searchbar,
 .content{
     border: var(--border);
-}
+} */
 
 button{
     all: unset;
     box-sizing: border-box;
 }
 
-.user,
+button:hover{
+    color: var(--orange);
+    background: var(--black2);
+    border-radius: 10%;    
+}
+
+
+
+/* .user,
 .fileoptions,
 .options1,
 .option2,
@@ -29,7 +37,7 @@ button{
 .announcements,
 .trending{
     border: var(--subborder);
-}
+} */
 
   body {
     font-family: 'Roboto';font-size: 22px;
@@ -74,6 +82,17 @@ input[type="search"]:hover{
 
 }
 
+.profilePic{
+    background-image: url(profPics/spongebobprofpic.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    margin-left: 25px;
+}
+
 .fileoptions {
     display: flex;
     justify-content: space-evenly;
@@ -85,11 +104,24 @@ input[type="search"]:hover{
     flex-direction: column;
 }
 
+.userInfo{
+    color: var(--orange);
+
+}
+
 .sidebar {
     grid-row: 1 / -1;
     display: grid;
     grid-template-rows: 150px 1fr;
     justify-content: center;
+
+}
+
+.logo{
+    background-image: url(icons/view-dashboard.svg);
+    width: 100px;
+    height: 100px;
+    filter: invert(1);
 
 }
 
@@ -110,17 +142,28 @@ input[type="search"]:hover{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 30px;
-    border: var(--subborder);
     height: 93%;
     margin: 10px;
     padding: 5px;
 }
 
+.projectBox:hover{
+    background-color: var(--orange);
+    box-shadow: 5px 10px 5px var(--grey);
+    color: var(--black2);
+}
+
 .projectBox {
-    border: var(--border);
+    font-size: .8em;
+    border: 1px groove var(--black1);
+    border-radius: 10px;
+    box-shadow: 5px 10px 5px var(--orange);
+    background-color: var(--black2);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    height: 250px;
+    width: 100%;
 }
 
 .announcements,
