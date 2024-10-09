@@ -179,11 +179,18 @@ h3.trendHead {
     margin-bottom: 5px;
 }
 
-.annContent,
-.trendsSections {
+.annContent {
     font-size: 1rem;
     margin: 15px;
     border: 1px dashed var(--white)
+}
+
+.trendsSections{
+    margin: 15px;
+    font-size: 1rem;
+    display: flex;
+
+
 }
 
 .aContentHeader {
