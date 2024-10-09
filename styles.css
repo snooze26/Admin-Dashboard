@@ -194,3 +194,7 @@ h3.trendHead {
 .announHead{
     margin-bottom: 5px;
 }
+
+.trendLogo{
+    border-radius: 50%;
+}
