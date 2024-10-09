@@ -32,6 +32,7 @@ button{
 }
 
   body {
+    font-family: 'Roboto';font-size: 22px;
     background-color: var(--black1);
     color: var(--white);
     display: grid;
