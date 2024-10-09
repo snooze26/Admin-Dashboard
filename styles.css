@@ -1,6 +1,11 @@
 :root{
     --border: 1px blue solid;
     --subborder: 1px red solid;
+    --orange: #EB5E28;
+    --black1: #252422;
+    --black2: #403D39;
+    --grey: #CCC5B9;
+    --white: #FFFCF2;
 
 }
 
@@ -9,6 +14,11 @@
 .searchbar,
 .content{
     border: var(--border);
+}
+
+button{
+    all: unset;
+    box-sizing: border-box;
 }
 
 .user,
@@ -22,6 +32,8 @@
 }
 
   body {
+    background-color: var(--black1);
+    color: var(--white);
     display: grid;
     line-height: 1.5;
     grid-template-columns: 200px repeat(3, 1fr);    
@@ -45,6 +57,13 @@ input[type="search"] {
     width: 60%;
     border-radius: 20px;
     height: 30px;
+    text-align: left;
+    background-color: var(--black2);
+    color: var(--white);
+}
+input[type="search"]:hover{
+    background-color: var(--orange);
+    color: var(--black1);
 }
 
 .header{
@@ -75,7 +94,7 @@ input[type="search"] {
 
 .content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 400px;
     grid-column: 2 / -1;
     grid-row: 3 / -1;
 }
