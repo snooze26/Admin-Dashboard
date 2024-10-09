@@ -26,6 +26,9 @@ button:hover{
     background: var(--black2);
     border-radius: 10%;    
 }
+img{
+    border-radius: 50%;
+}
 
 
 
@@ -189,6 +192,7 @@ h3.trendHead {
     margin: 15px;
     font-size: 1rem;
     display: flex;
+    
 
 
 }
