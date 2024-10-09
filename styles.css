@@ -173,5 +173,24 @@ input[type="search"]:hover{
     justify-content: center;
     align-content: center;
     text-align: center;
+}
 
+h3.trendHead {
+    margin-bottom: 5px;
+}
+
+.annContent,
+.trendsSections {
+    font-size: 1rem;
+    margin: 15px;
+    border: 1px dashed var(--white)
+}
+
+.aContentHeader {
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.announHead{
+    margin-bottom: 5px;
 }
